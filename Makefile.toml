@@ -32,6 +32,12 @@ cargo clippy -- \
 	-A clippy::uninlined_format_args
 '''
 
+# License
+[tasks.license-check]
+install_crate = "rustfmt"
+command = "cargo"
+args = ["deny", "check"]
+
 # Format
 
 ## Check
@@ -81,4 +87,4 @@ args = ["build", "--release"]
 dependencies = ["fmt-fix", "lint", "test"]
 
 [tasks.ci]
-dependencies = ["fmt-check", "lint", "test", "release"]
+dependencies = ["fmt-check", "license-check", "lint", "test", "release"]
