@@ -1,6 +1,6 @@
 # {{ project-name }}
 
-# License
+## License
 
 {{ project-name }}: {{ description }}  
 Copyright © 2023 {{ authors }}
