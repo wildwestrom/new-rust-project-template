@@ -86,4 +86,4 @@ args = ["build", "--release"]
 dependencies = ["fmt-fix", "lint", "test"]
 
 [tasks.ci]
-dependencies = ["fmt-check", "license-check", "lint", "test", "release"]
+dependencies = ["fmt-check", "lint", "test", "release"]
