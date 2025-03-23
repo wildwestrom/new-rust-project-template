@@ -2,7 +2,7 @@
   description = "Rust flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs";
     rust-overlay.url = "github:oxalica/rust-overlay";
     devenv.url = "github:cachix/devenv";
     systems.url = "github:nix-systems/default";
