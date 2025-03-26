@@ -42,6 +42,7 @@
                 stdenv = pkgs.stdenvAdapters.useMoldLinker pkgs.clangStdenv;
                 packages = with pkgs; [
                   rust-toolchain
+                  just
                 ];
               }
             ];
